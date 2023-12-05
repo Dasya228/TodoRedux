@@ -1,13 +1,99 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #066acd;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    text-align: center;
+    background: white;
+    padding: 100px;
+    border-radius: 20px;
+
+}
+h1{
+    margin-bottom: 30px;
+}
+
+.add-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px 30px;
+    border: 1px solid #066acd;
+    border-radius: 8px;
+    color: #066acd;
+    font-size: 16px;
+}
+
+.addSave {
+    padding: 10px 25px;
+    border: 1px solid #066acd;
+    background-color: #066acd;
+    border-radius: 8px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.title-container, .save-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #c5e1e6;
+    margin-bottom: 20px;
+    padding: 10px 35px;
+    border-radius: 8px;
+}
+
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+}
+
+svg {
+    fill: white;
+}
+
+.btn-container button {
+    cursor: pointer;
+    border: 1px solid #066acd;
+    background: #066acd;
+    padding: 5px;
 }
